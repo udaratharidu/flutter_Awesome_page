@@ -5,11 +5,17 @@ class ImageCard extends StatelessWidget {
   final String imagePath;
   final String title;
   final String description;
-  const ImageCard(
-      {super.key,
-      required this.imagePath,
-      required this.title,
-      required this.description});
+  final Color titleColor;
+  final bool isCornerRounded;
+
+  const ImageCard({
+    super.key,
+    required this.imagePath,
+    required this.title,
+    required this.description,
+    required this.titleColor,
+    required this.isCornerRounded,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -20,16 +26,25 @@ class ImageCard extends StatelessWidget {
           title,
           style: TextStyle(
             fontSize: 22,
-            color: naturalTopicColor,
+            color: titleColor,
             fontWeight: FontWeight.w600,
           ),
         ),
         const SizedBox(height: 20),
-        Image.asset(
-          imagePath,
-          fit: BoxFit.cover,
-          width: double.infinity,
-        ),
+        isCornerRounded
+            ? ClipRRect(
+                borderRadius: BorderRadius.circular(30),
+                child: Image.asset(
+                  imagePath,
+                  fit: BoxFit.cover,
+                  width: double.infinity,
+                ),
+              )
+            : Image.asset(
+                imagePath,
+                fit: BoxFit.cover,
+                width: double.infinity,
+              ),
         const SizedBox(height: 20),
         Text(
           description,

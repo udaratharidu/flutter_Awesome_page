@@ -1,3 +1,6 @@
+import 'package:awesome_places/pages/cultural_page.dart';
+import 'package:awesome_places/pages/landmarks_page.dart';
+import 'package:awesome_places/pages/nightlife_page.dart';
 import 'package:awesome_places/pages/widgets/reusable/home_page/catagory_card.dart';
 import 'package:awesome_places/pages/natural_wonders.dart';
 import 'package:awesome_places/utiliti/colors.dart';
@@ -99,10 +102,20 @@ class HomePage extends StatelessWidget {
                         catagoryWidth: 170,
                       ),
                     ),
-                    const catagoryCard(
-                      catagoryName: "Nightlife",
-                      catagoryColor: catagoryBoxColor,
-                      catagoryWidth: 170,
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => const NightlifePage(),
+                          ),
+                        );
+                      },
+                      child: const catagoryCard(
+                        catagoryName: "Nightlife",
+                        catagoryColor: catagoryBoxColor,
+                        catagoryWidth: 170,
+                      ),
                     ),
                   ],
                 ),
@@ -113,24 +126,34 @@ class HomePage extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     GestureDetector(
-                      // onTap: () {
-                      //   Navigator.push(
-                      //     context,
-                      //     MaterialPageRoute(
-                      //       builder: (context) => const naturalWonders(),
-                      //     ),
-                      //   );
-                      // },
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => const LandmarksPage(),
+                          ),
+                        );
+                      },
                       child: const catagoryCard(
                         catagoryName: "Landmarks",
                         catagoryColor: catagoryBoxTwoColor,
                         catagoryWidth: 170,
                       ),
                     ),
-                    const catagoryCard(
-                      catagoryName: "Cultural",
-                      catagoryColor: catagoryBoxTwoColor,
-                      catagoryWidth: 170,
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => const CulturalPage(),
+                          ),
+                        );
+                      },
+                      child: const catagoryCard(
+                        catagoryName: "Cultural",
+                        catagoryColor: catagoryBoxTwoColor,
+                        catagoryWidth: 170,
+                      ),
                     ),
                   ],
                 ),

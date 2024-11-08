@@ -1,19 +1,19 @@
 import 'package:awesome_places/pages/widgets/reusable/natural_wonders/image_card.dart';
+
 import 'package:awesome_places/utiliti/colors.dart';
 import 'package:flutter/material.dart';
 
-// ignore: camel_case_types
-class naturalWonders extends StatelessWidget {
-  const naturalWonders({super.key});
+class NightlifePage extends StatelessWidget {
+  const NightlifePage({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: const Text(
-          "Natural Wonders",
+          "Nightlife",
           style: TextStyle(
-            color: naturalMainTopicColor,
+            color: nightlifeMainTopicColor,
             fontSize: 30,
             fontWeight: FontWeight.w600,
           ),
@@ -21,9 +21,8 @@ class naturalWonders extends StatelessWidget {
       ),
       body: SingleChildScrollView(
         child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 10.0),
+          padding: const EdgeInsets.symmetric(horizontal: 15.0),
           child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               const SizedBox(
                 height: 20,
@@ -39,10 +38,10 @@ class naturalWonders extends StatelessWidget {
                 height: 30,
               ),
               ImageCard(
-                title: "Nature Wonders Place-1",
-                titleColor: naturalTopicColor,
-                isCornerRounded: false,
-                imagePath: "assets/natural1.PNG",
+                imagePath: "assets/nightlife1.PNG",
+                title: "Nightlife Place-1",
+                titleColor: nightlifeTopicColor,
+                isCornerRounded: true,
                 description:
                     "Welcome to our travel app, your ultimate guide to discovering captivating destinations around the globe! Whether you're seeking the tranquility visit offers something for every traveler.",
               ),
@@ -50,21 +49,10 @@ class naturalWonders extends StatelessWidget {
                 height: 30,
               ),
               ImageCard(
-                title: "Nature Wonders Place-2",
-                titleColor: naturalTopicColor,
-                isCornerRounded: false,
-                imagePath: "assets/natural2.PNG",
-                description:
-                    "Welcome to our travel app, your ultimate guide to discovering captivating destinations around the globe! Whether you're seeking the tranquility visit offers something for every traveler.",
-              ),
-              const SizedBox(
-                height: 30,
-              ),
-              ImageCard(
-                title: "Nature Wonders Place-3",
-                titleColor: naturalTopicColor,
-                isCornerRounded: false,
-                imagePath: "assets/natural3.PNG",
+                imagePath: "assets/nightlife2.PNG",
+                titleColor: nightlifeTopicColor,
+                isCornerRounded: true,
+                title: "Nightlife Place-2",
                 description:
                     "Welcome to our travel app, your ultimate guide to discovering captivating destinations around the globe! Whether you're seeking the tranquility visit offers something for every traveler.",
               ),

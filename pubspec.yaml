@@ -64,6 +64,9 @@ flutter:
     - assets/natural1.PNG
     - assets/natural2.PNG
     - assets/natural3.PNG
+    - assets/nightlife1.PNG
+    - assets/nightlife2.PNG
+    - assets/cultural.PNG
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

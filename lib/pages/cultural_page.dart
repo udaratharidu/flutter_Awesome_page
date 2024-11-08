@@ -1,3 +1,6 @@
+import 'package:awesome_places/pages/widgets/sheard/button.dart';
+import 'package:awesome_places/pages/widgets/sheard/input.dart';
+import 'package:awesome_places/pages/widgets/sheard/star_card.dart';
 import 'package:awesome_places/utiliti/colors.dart';
 import 'package:flutter/material.dart';
 
@@ -19,7 +22,7 @@ class CulturalPage extends StatelessWidget {
       ),
       body: SingleChildScrollView(
         child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 15.0),
+          padding: EdgeInsets.symmetric(horizontal: 15.0),
           child: Column(
             children: [
               const SizedBox(height: 20),
@@ -51,6 +54,63 @@ class CulturalPage extends StatelessWidget {
                   color: mainTextColor,
                 ),
                 textAlign: TextAlign.center,
+              ),
+              const SizedBox(
+                height: 20,
+              ),
+              const Text(
+                "Rate this Place",
+                style: TextStyle(
+                    fontSize: 20,
+                    color: culturalTopicColor,
+                    fontWeight: FontWeight.w600),
+                textAlign: TextAlign.center,
+              ),
+              const SizedBox(
+                height: 20,
+              ),
+              const StarCard(),
+              const SizedBox(
+                height: 20,
+              ),
+              Text(
+                "Welcome to our travel app, your ultimate guide to discovering captivating destinations around the globe! Whether you're seeking the tranquility visit offers something for every traveler.",
+                style: TextStyle(
+                  fontSize: 16,
+                  color: mainTextColor,
+                ),
+                textAlign: TextAlign.center,
+              ),
+              const SizedBox(
+                height: 20,
+              ),
+              const Text(
+                "Send Feedback",
+                style: TextStyle(
+                    fontSize: 20,
+                    color: culturalTopicColor,
+                    fontWeight: FontWeight.w600),
+                textAlign: TextAlign.center,
+              ),
+              const SizedBox(
+                height: 20,
+              ),
+              const textInput(
+                hintText: "Enter text...",
+              ),
+              const SizedBox(
+                height: 20,
+              ),
+              const Row(
+                mainAxisAlignment: MainAxisAlignment.end,
+                children: [
+                  customButton(
+                    buttonText: "Submit",
+                  ),
+                ],
+              ),
+              const SizedBox(
+                height: 20,
               ),
             ],
           ),

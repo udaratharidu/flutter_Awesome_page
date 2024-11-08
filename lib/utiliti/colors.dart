@@ -18,8 +18,8 @@ final Color landmarksTopicColor = const Color(0xff0029FF).withOpacity(.53);
 
 const Color culturalMainTopicColor = Color(0xffC00C00);
 const Color culturalTopicColor = Color(0xffFF9900);
-final Color rateBarColor = const Color(0xffCACACA).withOpacity(31);
-final Color rateStarColor = const Color(0xff3B3636).withOpacity(75);
+const Color rateBarColor = Color(0xffCACACA);
+const Color rateStarColor = Color(0xff3B3636);
 final Color taxtBarColor = const Color(0xffD9D9D9).withOpacity(0);
 
 const Color greenButtonColor = Color(0xff06FFA5);

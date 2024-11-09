@@ -1,3 +1,4 @@
+import 'package:awesome_places/pages/booking_page.dart';
 import 'package:awesome_places/pages/cultural_page.dart';
 import 'package:awesome_places/pages/landmarks_page.dart';
 import 'package:awesome_places/pages/nightlife_page.dart';
@@ -160,11 +161,21 @@ class HomePage extends StatelessWidget {
                 const SizedBox(
                   height: 20,
                 ),
-                const Center(
-                  child: catagoryCard(
-                    catagoryName: "Book For A Ride Today!",
-                    catagoryColor: yellowBottonColor,
-                    catagoryWidth: 370,
+                GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const bookingPage(),
+                      ),
+                    );
+                  },
+                  child: const Center(
+                    child: catagoryCard(
+                      catagoryName: "Book For A Ride Today!",
+                      catagoryColor: yellowBottonColor,
+                      catagoryWidth: 370,
+                    ),
                   ),
                 ),
               ],

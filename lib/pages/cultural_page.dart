@@ -95,7 +95,7 @@ class CulturalPage extends StatelessWidget {
               const SizedBox(
                 height: 20,
               ),
-              const textInput(
+              const textInputCard(
                 hintText: "Enter text...",
               ),
               const SizedBox(
@@ -106,6 +106,7 @@ class CulturalPage extends StatelessWidget {
                 children: [
                   customButton(
                     buttonText: "Submit",
+                    buttonColor: yellowBottonColor,
                   ),
                 ],
               ),

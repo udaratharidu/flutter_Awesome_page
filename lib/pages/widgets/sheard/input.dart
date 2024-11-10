@@ -2,9 +2,9 @@ import 'package:awesome_places/utiliti/colors.dart';
 import 'package:flutter/material.dart';
 
 // ignore: camel_case_types
-class textInput extends StatelessWidget {
+class textInputCard extends StatelessWidget {
   final String hintText;
-  const textInput({super.key, required this.hintText});
+  const textInputCard({super.key, required this.hintText});
 
   @override
   Widget build(BuildContext context) {

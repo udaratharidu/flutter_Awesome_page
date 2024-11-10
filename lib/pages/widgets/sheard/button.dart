@@ -4,9 +4,11 @@ import 'package:flutter/material.dart';
 // ignore: camel_case_types
 class customButton extends StatelessWidget {
   final String buttonText;
+  final Color buttonColor;
   const customButton({
     super.key,
     required this.buttonText,
+    required this.buttonColor,
   });
 
   @override
@@ -14,7 +16,7 @@ class customButton extends StatelessWidget {
     return ElevatedButton(
       onPressed: () {},
       style: ElevatedButton.styleFrom(
-        backgroundColor: yellowBottonColor,
+        backgroundColor: buttonColor,
         padding: const EdgeInsets.symmetric(
           horizontal: 15,
           vertical: 8,

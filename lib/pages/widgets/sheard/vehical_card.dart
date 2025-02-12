@@ -9,6 +9,7 @@ class VehicalCard extends StatelessWidget {
   const VehicalCard(
       // ignore: non_constant_identifier_names
       {super.key,
+      // ignore: non_constant_identifier_names
       required this.ImageLink,
       required this.imageName});
 
